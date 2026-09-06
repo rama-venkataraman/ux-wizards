@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Quickstore</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+
+  <header class="topbar">
+
+    <a href="#" class="brand">
+      <span>UX Wizards</span>
+    </a>
+
+    <nav class="tabs">
+
+      <button
+        class="tab-btn active"
+        data-tab="home"
+      >
+        Home
+      </button>
+
+      <button
+        class="tab-btn"
+        data-tab="store"
+      >
+        Store
+      </button>
+
+      <button
+        class="tab-btn"
+        data-tab="newsletter"
+      >
+        Newsletter
+      </button>
+
+      <button
+        class="tab-btn"
+        data-tab="jobs"
+      >
+        Job Board
+      </button>
+
+      <button
+        class="tab-btn"
+        data-tab="style-guide"
+      >
+        Style Guide
+      </button>
+
+      <button
+        class="tab-btn"
+        data-tab="style-guide"
+      >
+        Events
+      </button>
+
+    </nav>
+  </header>
+
+
+  <!-- =========================
+       MAIN
+  ========================== -->
+
+  <main>
+
+    <!-- =========================
+         HOME
+    ========================== -->
+
+    <section
+      id="home"
+      class="tab-panel active"
+    >
+
+      <!-- HERO -->
+
+      <section class="hero">
+
+        <div class="hero-content">
+
+          <div class="eyebrow">
+            ✨ Become a Wizard today!
+          </div>
+
+          <h1>
+            Meet 
+            <span>other</span>
+            UX Enthusiasts
+          </h1>
+
+          <p class="hero-description">
+            Get to know UX-ers just like you! 
+            Exchange ideas, socialize, and grow together in our collaborative learning community.
+          </p>
+
+          <div class="hero-buttons">
+
+            <button
+              class="primary-btn"
+              data-tab="store"
+            >
+              Explore the Store →
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <!-- HERO ART -->
+
+        <div class="hero-art">
+
+          <div class="hero-blob blob-pink"></div>
+
+          <div class="hero-blob blob-purple"></div>
+
+          <div class="hero-blob blob-yellow"></div>
+
+          <div class="floating-card card-main">
+
+<img src="public/images.png" alt="Product Image"> 
+</div>
+          </div>
+
+
+          <div class="floating-card card-star">
+            ✦
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- INTRO -->
+
+      <section
+        id="about"
+        class="intro-section"
+      >
+
+        <div class="section-container">
+
+          <div class="section-label">
+            Explore our merchandise
+          </div>
+
+          <h2>
+            Good products.
+            <br>
+            Simple experiences.
+          </h2>
+
+          <p>
+            Buy our merch and be part of the UX Wizards community. We focus on quality products and a simple shopping experience.
+          </p>
+
+        </div>
+
+      </section>
+
+      <!-- FEATURED PRODUCTS -->
+
+      <section class="featured-products">
+
+        <div class="section-container">
+
+          <div class="section-heading">
+
+            <div>
+              <span class="section-label">
+                SHOP
+              </span>
+
+              <h2>
+                Find your people. Do things together. Grow.
+              </h2>
+            </div>
+
+          </div>
+
+
+          <!--
+            app.js can optionally populate
+            this area in the future.
+          -->
+
+          <div
+            id="home-product-preview"
+            class="home-product-preview"
+          >
+
+            <div class="preview-card preview-one">
+              <div class="preview-art">
+                ✦
+              </div>
+
+              <h3>
+                Friendship
+              </h3>
+
+            </div>
+
+
+            <div class="preview-card preview-two">
+              <div class="preview-art">
+                ✨
+              </div>
+
+              <h3>
+                Events
+              </h3>
+
+            </div>
+
+
+            <div class="preview-card preview-three">
+              <div class="preview-art">
+                🪄
+              </div>
+
+              <h3>
+                Growth
+              </h3>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      </section>
+
+
+      <!-- CTA -->
+
+      <section class="final-cta">
+
+        <div class="section-container">
+
+          <div class="cta-inner">
+
+            <span class="cta-sparkle">
+              ✦
+            </span>
+
+            <h2>
+              Ready to discover
+              something new?
+            </h2>
+
+            <p>
+              Explore the Quickstore collection
+              and find your next favorite.
+            </p>
+
+            <button
+              class="cta-button"
+              data-tab="store"
+            >
+              Go to Store →
+            </button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </section>
+
+
+    <!-- =========================
+         STORE
+    ========================== -->
+
+    <section
+      id="store"
+      class="tab-panel"
+    >
+
+      <section class="store-header">
+
+        <div class="section-container">
+
+          <span class="section-label">
+            QUICKSTORE SHOP
+          </span>
+
+          <h1>
+            Find your
+            <span>favorite.</span>
+          </h1>
+
+          <p>
+            Browse our latest products.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <section class="store-products">
+
+        <div class="section-container">
+
+          <div
+            id="product-grid"
+            class="product-grid"
+          >
+
+            <p class="loading-text">
+              Loading products…
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       CHECKOUT MODAL
+  ========================== -->
+
+  <div
+    id="modal-backdrop"
+    class="modal-backdrop hidden"
+  >
+
+    <div class="modal">
+
+      <button
+        id="modal-close"
+        class="modal-close"
+        aria-label="Close"
+      >
+        &times;
+      </button>
+
+      <div class="modal-art">
+
+        <img
+          id="modal-image"
+          src=""
+          alt=""
+          class="modal-image"
+        />
+
+      </div>
+
+      <div class="modal-content">
+
+        <span class="section-label">
+          QUICKSTORE
+        </span>
+
+        <h2 id="modal-name"></h2>
+
+        <label
+          for="variant-select"
+        >
+          Choose your option
+        </label>
+
+        <select
+          id="variant-select"
+        ></select>
+
+        <div
+          id="modal-price"
+          class="modal-price"
+        ></div>
+
+        <button
+          id="checkout-btn"
+          class="checkout-btn"
+        >
+          Checkout →
+        </button>
+
+        <p
+          id="modal-error"
+          class="modal-error"
+        ></p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <div class="footer-container">
+
+      <div class="footer-brand">
+
+        <div class="brand">
+          <span class="brand-icon">
+            ✦
+          </span>
+
+          Quickstore
+        </div>
+
+        <p>
+          Simple shopping.
+          A little bit of magic.
+        </p>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <a
+          href="#"
+          data-tab="home"
+        >
+          Home
+        </a>
+
+        <a
+          href="#store"
+          data-tab="store"
+        >
+          Store
+        </a>
+
+        <a href="#">
+          Instagram
+        </a>
+
+        <a href="#">
+          Contact
+        </a>
+
+      </div>
+
+
+      <div class="copyright">
+        © 2026 Quickstore
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script src="app.js"></script>
+
+
+  <!--
+    Small navigation helper.
+    Your existing app.js remains responsible
+    for products and checkout.
+  -->
+
+  <script>
+
+    document.querySelectorAll("[data-tab]").forEach(button => {
+
+      button.addEventListener("click", () => {
+
+        const tab = button.dataset.tab;
+
+        if (!tab) return;
+
+        document.querySelectorAll(".tab-panel")
+          .forEach(panel => {
+            panel.classList.remove("active");
+          });
+
+        document.querySelectorAll(".tab-btn")
+          .forEach(btn => {
+            btn.classList.remove("active");
+          });
+
+        const target =
+          document.getElementById(tab);
+
+        if (target) {
+          target.classList.add("active");
+        }
+
+        document.querySelectorAll(
+          `.tab-btn[data-tab="${tab}"]`
+        ).forEach(btn => {
+          btn.classList.add("active");
+        });
+
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>

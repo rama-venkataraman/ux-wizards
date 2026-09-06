@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Order confirmed</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="success-page">
+    <div id="success-box">Checking your order…</div>
+    <a href="/index.html#store" class="back-link">← Back to store</a>
+  </main>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const sessionId = params.get('session_id');
+    const box = document.getElementById('success-box');
+
+    if (!sessionId) {
+      box.textContent = 'No order found.';
+    } else {
+      fetch(`/api/session/${sessionId}`)
+        .then(r => r.json())
+        .then(data => {
+          if (data.status === 'paid') {
+            box.innerHTML = `<h1>Thank you! 🎉</h1><p>Your payment was successful and your order has been sent to production.</p><p>A confirmation was sent to ${data.email || 'your email'}.</p>`;
+          } else {
+            box.textContent = 'Payment not completed yet.';
+          }
+        })
+        .catch(() => { box.textContent = 'Could not verify order status.'; });
+    }
+  </script>
+</body>
+</html>
